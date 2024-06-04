@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section Fall Animation</title>
+<style>
+    /* CSS for Section Fall Animation */
+    slideInFromLeft {
+        position: relative;
+        animation: fallAnimation 2s ease forwards;
+    }
+
+  /* CSS for Slide-in Animation from Left to Center */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slide-in-from-left {
+    animation: slideInFromLeft 1s ease forwards;
+    position: relative;
+}
+
+</style>
+</head>
+<body>
+
+<div class="slide-in-from-left">
+    <div class="">
+        <h2>This section falls from the top of the screen to the middle</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at lorem vel justo pulvinar sagittis vel nec dolor.</p>
+    </div>
+</div>
+
+</body>
+</html>
